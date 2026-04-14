@@ -6,8 +6,8 @@ public class Main {
         score1.setOwnerName("Иван Петров");
         score1.setAccountNumber("40817810099910004312");
 
-        score1.deposit(5000);
-        score1.withdraw(1500);
+        score1.deposit(1000);
+        score1.withdraw(500);
 
         score1.printAccountInfo();
 
@@ -20,6 +20,9 @@ public class Main {
 
         score2.printAccountInfo();
 
+        score2.transfer(score1, 50_000);
+        score1.printAccountInfo();
+        score2.printAccountInfo();
     }
 }
 
