@@ -1,20 +1,17 @@
 package bank_app;
 
 public class BankAccount {
-    String ownerName;
-    double balance = 0.0;
-    String accountNumber;
+    private String ownerName;
+    private double balance = 0.0;
+    private String accountNumber;
 
-    public void setOwnerName(String name) {
-        this.ownerName = name;
+    public BankAccount(String ownerName, String accountNumber) {
+        this.ownerName = ownerName;
+        this.accountNumber = accountNumber;
+        this.balance = 0.0;
     }
-
     public String getOwnerName() {
         return ownerName;
-    }
-
-    public void setAccountNumber(String number) {
-        this.accountNumber = number;
     }
 
     public String getAccountNumber() {

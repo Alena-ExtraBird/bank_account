@@ -2,18 +2,15 @@ package bank_app;
 
 public class Main {
     public static void main(String[] args) {
-        BankAccount score1 = new BankAccount();
-        score1.setOwnerName("Иван Петров");
-        score1.setAccountNumber("40817810099910004312");
+        BankAccount score1 = new BankAccount("Мария Владимировна", "555660042452356");
+
 
         score1.deposit(1000);
         score1.withdraw(500);
 
         score1.printAccountInfo();
 
-        BankAccount score2 = new BankAccount();
-        score2.setOwnerName("Мария Владимировна");
-        score2.setAccountNumber("4085746099910004313");
+        BankAccount score2 = new BankAccount("Владимир Пупкин", "3534436446387543");
 
         score2.deposit(100_000);
         score2.withdraw(10_000);
